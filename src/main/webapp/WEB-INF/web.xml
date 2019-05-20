@@ -1,0 +1,34 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>feed-crocodiles</servlet-name>
+    <servlet-class>feed.FeedCrocodilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>feed-crocodiles</servlet-name>
+    <url-pattern>/crocodiles</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>feed-spiders</servlet-name>
+    <servlet-class>feed.FeedSpidersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>feed-spiders</servlet-name>
+    <url-pattern>/spiders</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>feed-aliens</servlet-name>
+    <servlet-class>feed.FeedAliensServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>feed-aliens</servlet-name>
+    <url-pattern>/aliens</url-pattern>
+  </servlet-mapping>
+</web-app>
