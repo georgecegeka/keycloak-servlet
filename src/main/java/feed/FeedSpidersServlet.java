@@ -11,6 +11,12 @@ public class FeedSpidersServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.println("<h3>Feed the spiders!</h3>");
+        if (!PermissionChecker.hasUserAccess("spiders", request)) {
+            out.println("<h3>NOT Feed the spiders!</h3>");
+        } else {
+            out.println("<h3>Feed the spiders!</h3>");
+        }
+
     }
+
 }

@@ -1,0 +1,11 @@
+{
+  "realm" : "zoo",
+  "resource" : "zoo-servlet",
+  "auth-server-url" : "http://localhost:8380/auth",
+  "ssl-required" : "external",
+  "public-client" : false,
+  "credentials" : {
+    "secret" : "907cd812-c0bd-4b02-9fc3-e6cec0a2b95a"
+  },
+  "enable-basic-auth": true
+}
